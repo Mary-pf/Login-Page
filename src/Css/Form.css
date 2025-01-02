@@ -1,0 +1,152 @@
+body {
+  background: linear-gradient(135deg, #b3c3cd, #30336b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+.container {
+  background-color: #fff;
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #636e72;
+  font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  display: flex;
+  min-width: 28vw;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"] {
+  border-color: #535c68;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+button {
+  background-color: #686de0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="button"] {
+  background-color: none;
+}
+
+button[type="submit"] {
+  margin-top: 14px;
+}
+
+button:hover {
+  filter: brightness(70%);
+}
+
+.text-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.space {
+  padding-right: 10px;
+}
+
+.link-class {
+  color: #333;
+  text-decoration: none;
+}
+
+.link-class:hover {
+  color: darkslateblue;
+}
+.error {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+}
+
+.password-toggle {
+  position: absolute;
+  font-size: 14px;
+  color: #535c68;
+  cursor: pointer;
+  border: none;
+  background: none;
+  text-align: right;
+  top: 47.2%;
+  left: 27.7rem;
+  transform: translateY(-50%);
+}
+
+.password-toggle.password {
+  top: 55%;
+  left: 28.1rem;
+}
+.password-toggle.bottom {
+  top: 63.2%;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 18px;
+  }
+}
